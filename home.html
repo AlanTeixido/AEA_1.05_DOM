@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manipulació del DOM</title>
+  
+</head>
+
+<style>
+
+#canviColor{
+    background-color: red;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+</style>
+<body>
+  <h1>Títol original</h1>
+  <p>Text original del paràgraf.</p>
+  <ul>
+    <li>Element 1</li>
+    <li>Element 2</li>
+    <li>Element 3</li>
+  </ul>
+<br>
+
+  <button id="canviText">Canvia Text</button>
+
+<br>
+<br>
+
+  <div id="canviColor">Fes clic aquí per canviar l'estil del text!</div>
+
+<br>
+<h1>Formulari de Text</h1>
+  
+  <form id="formulari">
+    <label for="campText">Escriu alguna cosa:</label>
+    <input type="text" id="campText" required>
+    <button type="submit" id="enviarBtn">Enviar</button>
+  </form>
+
+  <p id="textMostrat"></p>
+
+  <h1>Llista de Suggeriments</h1>
+  <form id="formularisug">
+    <label for="campTextsug">Escriu un suggeriment:</label>
+    <input type="text" id="campTextsug" required>
+    <button type="submit" id="afegirSuggeriment">Afegir</button>
+  </form>
+  
+  <ul id="suggeriments"></ul>
+
+
+
+  <script src="./homejs.js"></script>
+
+  
+</body>
